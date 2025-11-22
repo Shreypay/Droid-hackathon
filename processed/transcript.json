@@ -1,0 +1,1130 @@
+{
+  "transcript": "One Hi my name is Dave Lucero Wala Um I want to introduce you to our northeastern Californian community Um um my pronouns are uh he him Uh And I want to um highlight some features of student life here in the Bay area",
+  "words": [
+    {
+      "word": "One",
+      "start": 0.0,
+      "end": 0.44,
+      "confidence": 1.0
+    },
+    {
+      "word": "Hi",
+      "start": 0.48,
+      "end": 0.8,
+      "confidence": 1.0
+    },
+    {
+      "word": "my",
+      "start": 0.84,
+      "end": 1.0,
+      "confidence": 1.0
+    },
+    {
+      "word": "name",
+      "start": 1.0,
+      "end": 1.2,
+      "confidence": 1.0
+    },
+    {
+      "word": "is",
+      "start": 1.2,
+      "end": 1.36,
+      "confidence": 1.0
+    },
+    {
+      "word": "Dave",
+      "start": 1.36,
+      "end": 1.6,
+      "confidence": 0.91
+    },
+    {
+      "word": "Lucero",
+      "start": 1.6,
+      "end": 2.04,
+      "confidence": 0.48
+    },
+    {
+      "word": "Wala",
+      "start": 2.04,
+      "end": 2.6,
+      "confidence": 0.44
+    },
+    {
+      "word": "Um",
+      "start": 2.84,
+      "end": 3.52,
+      "confidence": 1.0
+    },
+    {
+      "word": "I",
+      "start": 3.8,
+      "end": 4.24,
+      "confidence": 1.0
+    },
+    {
+      "word": "want",
+      "start": 4.24,
+      "end": 4.56,
+      "confidence": 1.0
+    },
+    {
+      "word": "to",
+      "start": 4.56,
+      "end": 4.76,
+      "confidence": 1.0
+    },
+    {
+      "word": "introduce",
+      "start": 4.8,
+      "end": 5.32,
+      "confidence": 1.0
+    },
+    {
+      "word": "you",
+      "start": 5.32,
+      "end": 5.44,
+      "confidence": 1.0
+    },
+    {
+      "word": "to",
+      "start": 5.44,
+      "end": 5.6,
+      "confidence": 1.0
+    },
+    {
+      "word": "our",
+      "start": 5.6,
+      "end": 5.72,
+      "confidence": 0.85
+    },
+    {
+      "word": "northeastern",
+      "start": 5.72,
+      "end": 6.32,
+      "confidence": 0.9
+    },
+    {
+      "word": "Californian",
+      "start": 6.32,
+      "end": 7.0,
+      "confidence": 0.83
+    },
+    {
+      "word": "community",
+      "start": 7.0,
+      "end": 7.56,
+      "confidence": 1.0
+    },
+    {
+      "word": "Um",
+      "start": 7.6,
+      "end": 8.28,
+      "confidence": 1.0
+    },
+    {
+      "word": "um",
+      "start": 8.72,
+      "end": 9.12,
+      "confidence": 0.87
+    },
+    {
+      "word": "my",
+      "start": 9.16,
+      "end": 9.44,
+      "confidence": 1.0
+    },
+    {
+      "word": "pronouns",
+      "start": 9.44,
+      "end": 10.08,
+      "confidence": 1.0
+    },
+    {
+      "word": "are",
+      "start": 10.08,
+      "end": 10.36,
+      "confidence": 1.0
+    },
+    {
+      "word": "uh",
+      "start": 10.4,
+      "end": 10.56,
+      "confidence": 0.62
+    },
+    {
+      "word": "he",
+      "start": 10.56,
+      "end": 10.8,
+      "confidence": 1.0
+    },
+    {
+      "word": "him",
+      "start": 10.84,
+      "end": 11.44,
+      "confidence": 1.0
+    },
+    {
+      "word": "Uh",
+      "start": 11.8,
+      "end": 12.0,
+      "confidence": 0.94
+    },
+    {
+      "word": "And",
+      "start": 12.0,
+      "end": 12.16,
+      "confidence": 1.0
+    },
+    {
+      "word": "I",
+      "start": 12.16,
+      "end": 12.32,
+      "confidence": 1.0
+    },
+    {
+      "word": "want",
+      "start": 12.32,
+      "end": 12.52,
+      "confidence": 1.0
+    },
+    {
+      "word": "to",
+      "start": 12.52,
+      "end": 12.72,
+      "confidence": 1.0
+    },
+    {
+      "word": "um",
+      "start": 12.76,
+      "end": 13.24,
+      "confidence": 1.0
+    },
+    {
+      "word": "highlight",
+      "start": 13.28,
+      "end": 14.12,
+      "confidence": 1.0
+    },
+    {
+      "word": "some",
+      "start": 14.12,
+      "end": 14.4,
+      "confidence": 1.0
+    },
+    {
+      "word": "features",
+      "start": 14.4,
+      "end": 14.72,
+      "confidence": 1.0
+    },
+    {
+      "word": "of",
+      "start": 14.72,
+      "end": 14.84,
+      "confidence": 1.0
+    },
+    {
+      "word": "student",
+      "start": 14.84,
+      "end": 15.24,
+      "confidence": 1.0
+    },
+    {
+      "word": "life",
+      "start": 15.24,
+      "end": 15.4,
+      "confidence": 1.0
+    },
+    {
+      "word": "here",
+      "start": 15.4,
+      "end": 15.6,
+      "confidence": 1.0
+    },
+    {
+      "word": "in",
+      "start": 15.6,
+      "end": 15.72,
+      "confidence": 1.0
+    },
+    {
+      "word": "the",
+      "start": 15.72,
+      "end": 15.84,
+      "confidence": 1.0
+    },
+    {
+      "word": "Bay",
+      "start": 15.84,
+      "end": 16.0,
+      "confidence": 1.0
+    },
+    {
+      "word": "area",
+      "start": 16.0,
+      "end": 16.64,
+      "confidence": 1.0
+    }
+  ],
+  "metadata": {
+    "duration": 0,
+    "word_count": 44,
+    "language": "en"
+  },
+  "raw_data": {
+    "format": "2.9",
+    "job": {
+      "created_at": "2025-11-22T22:08:28.691Z",
+      "data_name": "audio_1763849307.wav",
+      "duration": 16,
+      "id": "de0q9cguhq"
+    },
+    "metadata": {
+      "created_at": "2025-11-22T22:08:30.128092Z",
+      "language_pack_info": {
+        "adapted": false,
+        "itn": true,
+        "language_description": "English",
+        "word_delimiter": " ",
+        "writing_direction": "left-to-right"
+      },
+      "orchestrator_version": "2025.11.07+cd4ff775c0+14.7.0",
+      "transcription_config": {
+        "language": "en"
+      },
+      "type": "transcription"
+    },
+    "results": [
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": "One",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "end_time": 0.44,
+        "start_time": 0.0,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": ".",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "attaches_to": "previous",
+        "end_time": 0.44,
+        "is_eos": true,
+        "start_time": 0.44,
+        "type": "punctuation"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": "Hi",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "end_time": 0.8,
+        "start_time": 0.48,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": ",",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "attaches_to": "previous",
+        "end_time": 0.8,
+        "is_eos": false,
+        "start_time": 0.8,
+        "type": "punctuation"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": "my",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "end_time": 1.0,
+        "start_time": 0.84,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": "name",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "end_time": 1.2,
+        "start_time": 1.0,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": "is",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "end_time": 1.36,
+        "start_time": 1.2,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 0.91,
+            "content": "Dave",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "end_time": 1.6,
+        "start_time": 1.36,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 0.48,
+            "content": "Lucero",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "end_time": 2.04,
+        "start_time": 1.6,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": ".",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "attaches_to": "previous",
+        "end_time": 2.04,
+        "is_eos": true,
+        "start_time": 2.04,
+        "type": "punctuation"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 0.44,
+            "content": "Wala",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "end_time": 2.6,
+        "start_time": 2.04,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": ".",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "attaches_to": "previous",
+        "end_time": 2.6,
+        "is_eos": true,
+        "start_time": 2.6,
+        "type": "punctuation"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": "Um",
+            "language": "en",
+            "speaker": "UU",
+            "tags": [
+              "disfluency"
+            ]
+          }
+        ],
+        "end_time": 3.52,
+        "start_time": 2.84,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": ",",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "attaches_to": "previous",
+        "end_time": 3.52,
+        "is_eos": false,
+        "start_time": 3.52,
+        "type": "punctuation"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": "I",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "end_time": 4.24,
+        "start_time": 3.8,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": "want",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "end_time": 4.56,
+        "start_time": 4.24,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": "to",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "end_time": 4.76,
+        "start_time": 4.56,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": "introduce",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "end_time": 5.32,
+        "start_time": 4.8,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": "you",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "end_time": 5.44,
+        "start_time": 5.32,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": "to",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "end_time": 5.6,
+        "start_time": 5.44,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 0.85,
+            "content": "our",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "end_time": 5.72,
+        "start_time": 5.6,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 0.9,
+            "content": "northeastern",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "end_time": 6.32,
+        "start_time": 5.72,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 0.83,
+            "content": "Californian",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "end_time": 7.0,
+        "start_time": 6.32,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": "community",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "end_time": 7.56,
+        "start_time": 7.0,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": ".",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "attaches_to": "previous",
+        "end_time": 7.56,
+        "is_eos": true,
+        "start_time": 7.56,
+        "type": "punctuation"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": "Um",
+            "language": "en",
+            "speaker": "UU",
+            "tags": [
+              "disfluency"
+            ]
+          }
+        ],
+        "end_time": 8.28,
+        "start_time": 7.6,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": ",",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "attaches_to": "previous",
+        "end_time": 8.28,
+        "is_eos": false,
+        "start_time": 8.28,
+        "type": "punctuation"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 0.87,
+            "content": "um",
+            "language": "en",
+            "speaker": "UU",
+            "tags": [
+              "disfluency"
+            ]
+          }
+        ],
+        "end_time": 9.12,
+        "start_time": 8.72,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": ",",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "attaches_to": "previous",
+        "end_time": 9.12,
+        "is_eos": false,
+        "start_time": 9.12,
+        "type": "punctuation"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": "my",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "end_time": 9.44,
+        "start_time": 9.16,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": "pronouns",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "end_time": 10.08,
+        "start_time": 9.44,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": "are",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "end_time": 10.36,
+        "start_time": 10.08,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": ",",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "attaches_to": "previous",
+        "end_time": 10.36,
+        "is_eos": false,
+        "start_time": 10.36,
+        "type": "punctuation"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 0.62,
+            "content": "uh",
+            "language": "en",
+            "speaker": "UU",
+            "tags": [
+              "disfluency"
+            ]
+          }
+        ],
+        "end_time": 10.56,
+        "start_time": 10.4,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": ",",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "attaches_to": "previous",
+        "end_time": 10.56,
+        "is_eos": false,
+        "start_time": 10.56,
+        "type": "punctuation"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": "he",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "end_time": 10.8,
+        "start_time": 10.56,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": ",",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "attaches_to": "previous",
+        "end_time": 10.8,
+        "is_eos": false,
+        "start_time": 10.8,
+        "type": "punctuation"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": "him",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "end_time": 11.44,
+        "start_time": 10.84,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": ".",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "attaches_to": "previous",
+        "end_time": 11.44,
+        "is_eos": true,
+        "start_time": 11.44,
+        "type": "punctuation"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 0.94,
+            "content": "Uh",
+            "language": "en",
+            "speaker": "UU",
+            "tags": [
+              "disfluency"
+            ]
+          }
+        ],
+        "end_time": 12.0,
+        "start_time": 11.8,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": ".",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "attaches_to": "previous",
+        "end_time": 12.0,
+        "is_eos": true,
+        "start_time": 12.0,
+        "type": "punctuation"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": "And",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "end_time": 12.16,
+        "start_time": 12.0,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": "I",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "end_time": 12.32,
+        "start_time": 12.16,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": "want",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "end_time": 12.52,
+        "start_time": 12.32,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": "to",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "end_time": 12.72,
+        "start_time": 12.52,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": ",",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "attaches_to": "previous",
+        "end_time": 12.72,
+        "is_eos": false,
+        "start_time": 12.72,
+        "type": "punctuation"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": "um",
+            "language": "en",
+            "speaker": "UU",
+            "tags": [
+              "disfluency"
+            ]
+          }
+        ],
+        "end_time": 13.24,
+        "start_time": 12.76,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": ",",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "attaches_to": "previous",
+        "end_time": 13.24,
+        "is_eos": false,
+        "start_time": 13.24,
+        "type": "punctuation"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": "highlight",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "end_time": 14.12,
+        "start_time": 13.28,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": "some",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "end_time": 14.4,
+        "start_time": 14.12,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": "features",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "end_time": 14.72,
+        "start_time": 14.4,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": "of",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "end_time": 14.84,
+        "start_time": 14.72,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": "student",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "end_time": 15.24,
+        "start_time": 14.84,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": "life",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "end_time": 15.4,
+        "start_time": 15.24,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": "here",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "end_time": 15.6,
+        "start_time": 15.4,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": "in",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "end_time": 15.72,
+        "start_time": 15.6,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": "the",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "end_time": 15.84,
+        "start_time": 15.72,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": "Bay",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "end_time": 16.0,
+        "start_time": 15.84,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": "area",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "end_time": 16.64,
+        "start_time": 16.0,
+        "type": "word"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": 1.0,
+            "content": ".",
+            "language": "en",
+            "speaker": "UU"
+          }
+        ],
+        "attaches_to": "previous",
+        "end_time": 16.64,
+        "is_eos": true,
+        "start_time": 16.64,
+        "type": "punctuation"
+      }
+    ]
+  }
+}
