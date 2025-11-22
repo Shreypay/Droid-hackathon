@@ -1,6 +1,6 @@
 """
-Main Pipeline: Video → Audio → Text → Clean
-Complete speech analysis pipeline with AI cleaning
+Main Pipeline: Video → Audio → Text → Clean → New Audio
+Complete speech analysis pipeline with AI cleaning and audio generation
 """
 
 import os
@@ -8,6 +8,7 @@ import sys
 from audio_extraction import VideoProcessor
 from text import AudioTranscriber
 from speech_cleaner import SpeechCleaner
+from audio_creation import AudioCreator
 
 def main():
     """
@@ -25,14 +26,21 @@ def main():
     # Configuration - Try config.py first, then environment variables
     SPEECHMATICS_API_KEY = None
     GROQ_API_KEY = None
+    ELEVENLABS_API_KEY = None
     
     try:
         from config import SPEECHMATICS_API_KEY as SM_KEY, GROQ_API_KEY as GQ_KEY
         SPEECHMATICS_API_KEY = SM_KEY
         GROQ_API_KEY = GQ_KEY
+        try:
+            from config import ELEVENLABS_API_KEY as EL_KEY
+            ELEVENLABS_API_KEY = EL_KEY
+        except ImportError:
+            pass
     except ImportError:
         SPEECHMATICS_API_KEY = os.getenv('SPEECHMATICS_API_KEY')
         GROQ_API_KEY = os.getenv('GROQ_API_KEY')
+        ELEVENLABS_API_KEY = os.getenv('ELEVENLABS_API_KEY')
     
     # Check for required API keys
     if not SPEECHMATICS_API_KEY:
@@ -194,6 +202,40 @@ def main():
             print("-" * 60)
             print("⚠️ Groq API key not set - skipping AI cleaning")
             print("   To enable: export GROQ_API_KEY='your_api_key_here'")
+            print("-" * 60)
+            print()
+        
+        # Step 6: Generate New Audio (if ElevenLabs API key available and transcript was cleaned)
+        output_improved_audio = None
+        
+        if ELEVENLABS_API_KEY and cleaned_transcript:
+            print("-" * 60)
+            print("STEP 6: GENERATING NEW AUDIO WITH CLEANED SPEECH")
+            print("-" * 60)
+            
+            try:
+                audio_creator = AudioCreator(ELEVENLABS_API_KEY)
+                output_improved_audio = audio_creator.clone_voice_and_generate(
+                    original_audio_path=audio_path,
+                    fixed_transcript_csv=output_fixed_csv,
+                    output_path="processed/improved_audio.mp3"
+                )
+                
+                print()
+                
+            except Exception as e:
+                print(f"⚠️ Failed to generate new audio: {str(e)}")
+                print("   (Original and cleaned transcripts are still available)")
+                print()
+        elif not ELEVENLABS_API_KEY:
+            print("-" * 60)
+            print("⚠️ ElevenLabs API key not set - skipping audio generation")
+            print("   To enable: Add ELEVENLABS_API_KEY to config.py")
+            print("-" * 60)
+            print()
+        elif not cleaned_transcript:
+            print("-" * 60)
+            print("⚠️ No cleaned transcript available - skipping audio generation")
             print("-" * 60)
             print()
         
