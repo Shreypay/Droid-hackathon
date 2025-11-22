@@ -1,27 +1,54 @@
 """
-Main Pipeline: Video → Audio → Text
-Complete speech analysis pipeline
+Main Pipeline: Video → Audio → Text → Clean
+Complete speech analysis pipeline with AI cleaning
 """
 
 import os
 import sys
 from audio_extraction import VideoProcessor
 from text import AudioTranscriber
+from speech_cleaner import SpeechCleaner
 
 def main():
     """
     Main pipeline:
     1. Extract audio from video
     2. Transcribe audio to text
-    3. Display and save results
+    3. Clean transcript with AI
+    4. Display and save results
     """
     print("=" * 60)
     print("SPEECH SURGEON AI - COMPLETE PIPELINE")
     print("=" * 60)
     print()
     
-    # Configuration
-    SPEECHMATICS_API_KEY = "V7jlalVsvvwH9NewBt1qaknMWn5yLaiV"
+    # Configuration - Try config.py first, then environment variables
+    SPEECHMATICS_API_KEY = None
+    GROQ_API_KEY = None
+    
+    try:
+        from config import SPEECHMATICS_API_KEY as SM_KEY, GROQ_API_KEY as GQ_KEY
+        SPEECHMATICS_API_KEY = SM_KEY
+        GROQ_API_KEY = GQ_KEY
+    except ImportError:
+        SPEECHMATICS_API_KEY = os.getenv('SPEECHMATICS_API_KEY')
+        GROQ_API_KEY = os.getenv('GROQ_API_KEY')
+    
+    # Check for required API keys
+    if not SPEECHMATICS_API_KEY:
+        print("❌ SPEECHMATICS_API_KEY not set!")
+        print()
+        print("Option 1: Create Analyzer/config.py with:")
+        print("  SPEECHMATICS_API_KEY = 'your_key'")
+        print("  GROQ_API_KEY = 'your_key'")
+        print()
+        print("Option 2: Set environment variable:")
+        print("  export SPEECHMATICS_API_KEY='your_key'")
+        sys.exit(1)
+    
+    if not GROQ_API_KEY:
+        print("⚠️ GROQ_API_KEY not set - AI cleaning will be skipped")
+        print()
     
     # Step 0: Automatically find video file (.mp4 or .mov)
     if len(sys.argv) > 1:
@@ -134,6 +161,43 @@ def main():
         
         print(f"Transcript CSV saved to: {output_csv}")
         print()
+        
+        # Step 5: Clean Transcript with AI (if Groq API key available)
+        cleaned_transcript = None
+        output_fixed_csv = "processed/fixed_transcript.csv"
+        
+        if GROQ_API_KEY:
+            print("-" * 60)
+            print("STEP 5: CLEANING TRANSCRIPT WITH AI")
+            print("-" * 60)
+            
+            try:
+                cleaner = SpeechCleaner(GROQ_API_KEY)
+                cleaned_transcript = cleaner.improve_transcript(result['transcript'])
+                
+                print()
+                print("📝 CLEANED TRANSCRIPT:")
+                print("-" * 60)
+                print(cleaned_transcript)
+                print("-" * 60)
+                print()
+                
+                # Save cleaned transcript to CSV
+                cleaner.save_cleaned_csv(cleaned_transcript, output_fixed_csv)
+                print()
+                
+            except Exception as e:
+                print(f"⚠️ Failed to clean transcript: {str(e)}")
+                print("   (Original transcript is still available)")
+                print()
+        else:
+            print("-" * 60)
+            print("⚠️ Groq API key not set - skipping AI cleaning")
+            print("   To enable: export GROQ_API_KEY='your_api_key_here'")
+            print("-" * 60)
+            print()
+        
+        print()
         print("=" * 60)
         print("✅ PIPELINE COMPLETE!")
         print("=" * 60)
@@ -143,16 +207,20 @@ def main():
         print(f"   Audio: {audio_path}")
         print(f"   Transcript JSON: {output_json}")
         print(f"   Transcript CSV: {output_csv}")
+        if cleaned_transcript:
+            print(f"   Fixed Transcript CSV: {output_fixed_csv}")
         print()
-        print("🎉 Your video has been successfully transcribed!")
+        print("🎉 Your video has been successfully processed!")
         
-        # Return paths for Convex storage
+        # Return paths for future use
         return {
             'video_path': video_path,
             'audio_path': audio_path,
             'transcript_json': output_json,
             'transcript_csv': output_csv,
-            'transcript_text': result['transcript']
+            'transcript_text': result['transcript'],
+            'fixed_transcript_csv': output_fixed_csv if cleaned_transcript else None,
+            'cleaned_transcript': cleaned_transcript
         }
         
     except Exception as e:
