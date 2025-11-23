@@ -1,6 +1,6 @@
 """
-Main Pipeline: Video → Audio → Text → Clean → New Audio
-Complete speech analysis pipeline with AI cleaning and audio generation
+Main Pipeline: Video → Audio → Text → Clean → New Audio → Convex → Cleanup
+Complete speech analysis pipeline with cloud storage and cleanup
 """
 
 import os
@@ -9,6 +9,7 @@ from audio_extraction import VideoProcessor
 from text import AudioTranscriber
 from speech_cleaner import SpeechCleaner
 from audio_creation import AudioCreator
+from convex import ConvexClient
 
 def main():
     """
@@ -27,6 +28,7 @@ def main():
     SPEECHMATICS_API_KEY = None
     GROQ_API_KEY = None
     ELEVENLABS_API_KEY = None
+    CONVEX_URL = None
     
     try:
         from config import SPEECHMATICS_API_KEY as SM_KEY, GROQ_API_KEY as GQ_KEY
@@ -37,10 +39,16 @@ def main():
             ELEVENLABS_API_KEY = EL_KEY
         except ImportError:
             pass
+        try:
+            from config import CONVEX_URL as CV_URL
+            CONVEX_URL = CV_URL
+        except ImportError:
+            pass
     except ImportError:
         SPEECHMATICS_API_KEY = os.getenv('SPEECHMATICS_API_KEY')
         GROQ_API_KEY = os.getenv('GROQ_API_KEY')
         ELEVENLABS_API_KEY = os.getenv('ELEVENLABS_API_KEY')
+        CONVEX_URL = os.getenv('CONVEX_URL')
     
     # Check for required API keys
     if not SPEECHMATICS_API_KEY:
@@ -218,7 +226,7 @@ def main():
                 output_improved_audio = audio_creator.clone_voice_and_generate(
                     original_audio_path=audio_path,
                     fixed_transcript_csv=output_fixed_csv,
-                    output_path="processed/improved_audio.mp3"
+                    output_path="processed/improved_audio.wav"  # Direct WAV output
                 )
                 
                 print()
@@ -237,6 +245,51 @@ def main():
             print("-" * 60)
             print("⚠️ No cleaned transcript available - skipping audio generation")
             print("-" * 60)
+            print()
+        
+        # Step 7: Cleanup files (keep only final WAV)
+        if output_improved_audio:
+            print()
+            print("-" * 60)
+            print("STEP 7: CLEANUP")
+            print("-" * 60)
+            print()
+            print("🧹 Cleaning up temporary files...")
+            
+            # Delete all files except final improved audio WAV
+            files_to_delete = [
+                video_path,  # Original video
+                audio_path,  # Original audio
+                output_json,  # Transcript JSON
+                output_csv,  # Transcript CSV
+                output_fixed_csv,  # Fixed transcript CSV
+                "processed/improved_audio.mp3",  # MP3 version if exists
+            ]
+            
+            deleted_count = 0
+            for file_path in files_to_delete:
+                if file_path and os.path.exists(file_path):
+                    try:
+                        os.remove(file_path)
+                        deleted_count += 1
+                        print(f"   Deleted: {file_path}")
+                    except Exception as e:
+                        print(f"⚠️ Failed to delete {file_path}: {str(e)}")
+            
+            # Delete the entire extracted audio directory
+            import shutil
+            extracted_dir = "processed/extracted"
+            if os.path.exists(extracted_dir):
+                try:
+                    shutil.rmtree(extracted_dir)
+                    deleted_count += 1
+                    print(f"   Deleted: {extracted_dir}/ (entire folder)")
+                except Exception as e:
+                    print(f"⚠️ Failed to delete {extracted_dir}: {str(e)}")
+            
+            print()
+            print(f"✅ Deleted {deleted_count} files/folders")
+            print(f"✅ Kept only: {output_improved_audio}")
             print()
         
         print()
