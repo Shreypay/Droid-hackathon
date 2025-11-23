@@ -19,6 +19,7 @@ def generation_pre(original_transcript, fixed_transcript):
     words_i = 0
     for index, sentence in enumerate(original_transcript):
         for i, word in enumerate(sentence):
+            word = word.lower()
             if word in fillers:
                 generation_time_stamps += [(word_time_stamps[0] if words_i == 0 else word_time_stamps[words_i-1],word_time_stamps[-1] if words_i == len(word_time_stamps)-1 else word_time_stamps[words_i+1])]
                 generation_phrases += [[fixed_transcript[index][0 if i == 0 else i-1: i]]] #only need to do to i cause we got rid of the filler words in theory
