@@ -1,8 +1,2 @@
 fixed_transcript
-"""This is our team, and we're solving a major problem in how people capture and share information. Every day, people record meetings, lectures, interviews, and training sessions. However, most recordings are full of filler words, stutters, long pauses, and background noise. Even when the content is great, the delivery can be distracting. When the speaker tries to turn these recordings into clean, usable content, the result isn't their best version.
-
-This is where our app comes in. We built an end-to-end system that takes any spoken recording and transforms it into a polished, professional version while keeping the original speaker's voice and style completely intact.
-
-Here's how it works. We start with a speech-to-text system, which gives us a highly accurate transcript from the audio. Then, our custom cleanup pipeline removes filler words, fixes grammar, corrects spacing, and improves clarity while preserving the speaker's meaning and personality.
-
-Next, we use our app to regenerate the audio, matching the speaker's original voice so closely that the final recording sounds natural but dramatically clearer and more confident. Finally, we insert the new audio track back into the original video. The result is a clean, tight, polished version of the recording, almost like the speaker delivered their best take the first time."""
+"""One, my name is Dave Lucero Wala. I'd like to introduce you to our northeastern Californian community. My pronouns are he, him. I'd like to highlight some features of student life here in the Bay area."""
