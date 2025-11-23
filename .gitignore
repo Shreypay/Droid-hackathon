@@ -1,3 +1,6 @@
 .env
 config.py
 Analyzer/config.py
+
+.env.local
+Analyzer/config.py
